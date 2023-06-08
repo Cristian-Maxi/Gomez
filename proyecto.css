@@ -545,7 +545,7 @@ section {
 
 .footer .container-foot {
     display: flex;
-    flex-wrap: pre-wrap;
+    flex-wrap: wrap;
 }
 
 .container-foot .foot {
@@ -644,7 +644,7 @@ section {
     header input:checked ~ label::before {
         content: "\f00d";
     }
-    section .home#home {
+    .home {
         flex-direction: column-reverse;
     }
     .home #home .movil img {
@@ -655,13 +655,20 @@ section {
     }
     .home .content p {
         font-size: 19px;
-    } 
+    }
+
+    .contenido-about {
+        flex-direction: column;
+    }
+    
     section .about{
         background-position: right;
     }
+
     .newsletter p {
-        width: 100%;
+        width: 70%;
     }
+
 }
 
 @media (width:450px) {
